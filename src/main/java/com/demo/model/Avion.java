@@ -36,7 +36,6 @@ public class Avion {
     @Column(name = "image_avion")
     private String image;
 
-    private Date expirationAssurance;
 
     public Avion() {
     }
@@ -99,12 +98,5 @@ public class Avion {
         this.image = image;
     }
 
-    public Date getExpirationAssurance() {
-        return expirationAssurance;
-    }
-
-    public void setExpirationAssurance(Date expirationAssurance) {
-        this.expirationAssurance = expirationAssurance;
-    }
 
 }
