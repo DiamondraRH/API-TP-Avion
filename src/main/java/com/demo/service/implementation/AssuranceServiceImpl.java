@@ -76,7 +76,4 @@ public class AssuranceServiceImpl implements  AssuranceService {
         return assuranceRepository.findExpired3Month();
     }
 
-    public Assurance findByIdAvion(int idAvion) {
-        return assuranceRepository.findByIdAvion(idAvion);
-    }
 }

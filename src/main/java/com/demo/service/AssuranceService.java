@@ -22,5 +22,4 @@ public interface AssuranceService {
 
     public List <Assurance> findExpired3Month();
     
-    public Assurance findByIdAvion(int idAvion);
 }
