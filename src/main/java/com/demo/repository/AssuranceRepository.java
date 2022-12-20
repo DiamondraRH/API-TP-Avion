@@ -17,9 +17,4 @@ public interface AssuranceRepository  extends JpaRepository<Assurance, Integer>{
 
    @Query(value = "SELECT * FROM assurance WHERE date_expiration between Current_date AND (current_date + interval '3 months')", nativeQuery = true)
    public List<Assurance> findExpired3Month();
-
-   @Query(value = "SELECT * FROM assurance WHERE id_avion = :id", nativeQuery = true)
-   public Assurance findByIdAvion(@Param("id") int id);
-
-   
 }
